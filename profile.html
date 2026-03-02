@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA | PANITTHA - ข้อมูลทั่วไป</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/1/15/Wny-logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Wny-logo.png" alt="WNY Logo">
+                <div style="line-height: 1.2;">
+                    PA <span>PANITTHA</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" >หน้าแรก</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">ข้อมูลและภาระงาน ▾</a>
+                    <div class="dropdown-content">
+                        <a href="profile.html" class="active" style="color:var(--text-main); background:rgba(16,185,129,0.15)">ข้อมูลทั่วไป</a>
+                        <a href="workload.html" >ภาระงานตาม ก.ค.ศ.</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" >การประเมิน PA ▾</a>
+                    <div class="dropdown-content">
+                        <a href="part1.html" >องค์ประกอบที่ 1 (การจัดการเรียนรู้)</a>
+                        <a href="part2.html" >องค์ประกอบที่ 2 (การส่งเสริมฯ)</a>
+                        <a href="part3.html" >องค์ประกอบที่ 3 (การพัฒนาตนเอง)</a>
+                        <a href="challenge.html" >ประเด็นท้าทาย (ส่วนที่ 2)</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" >ผลลัพธ์การเรียนรู้ ▾</a>
+                    <div class="dropdown-content">
+                        <a href="innovation.html" >สื่อและนวัตกรรม</a>
+                        <a href="students.html" >ผลงานนักเรียน</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" >ภาคผนวก ▾</a>
+                    <div class="dropdown-content">
+                        <a href="activities.html" >ภาพกิจกรรม</a>
+                        <a href="awards.html" >เกียรติบัตร</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <header class="content-header">
+            <h2 class="section-title">ข้อมูลผู้รับการประเมิน</h2>
+            <p class="section-subtitle">ประวัติส่วนตัวและการรับราชการ</p>
+        </header>
+        
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: start;">
+            
+            <div style="display: grid; gap: 30px;">
+                <div class="card" style="text-align: center; padding: 40px 30px;">
+                    <div class="profile-img-container" style="margin: 0 auto 25px auto; width: 220px; height: 220px;">
+                        <img src="https://github.com/ktedu-krucode/KTPA-evaluation/blob/main/assets/images/profile1.jpg?raw=true" alt="นางสาวปณิฏฐา บุญยงค์">
+                    </div>
+                    <h3 style="margin-top: 20px; color: var(--primary-light); font-size: 1.8rem; margin-bottom: 5px;">นางสาวปณิฏฐา บุญยงค์</h3>
+                    <p style="font-size: 1.1rem; color: var(--text-dim); margin-bottom: 15px;">ตำแหน่ง ครู</p>
+                    <div style="background: rgba(15, 23, 42, 0.6); padding: 15px; border-radius: 12px; border: 1px solid var(--glass-border); margin-top: 20px;">
+                        <p style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 8px;">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</p>
+                        <p style="font-size: 0.95rem; color: var(--text-dim);">โรงเรียนวังน้ำเย็นวิทยาคม</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">สพม. สระแก้ว</p>
+                    </div>
+                </div>
+
+                <!-- New Skills Card -->
+                <div class="card" style="padding: 30px;">
+                    <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 20px; color: var(--primary-light); display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
+                        <span style="background: rgba(16, 185, 129, 0.2); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1rem;">💻</span> ทักษะความเชี่ยวชาญ
+                    </h3>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
+                            <span>Web Development [HTML, CSS, JavaScript, PHP]</span>
+                            <span style="color: var(--primary);">90%</span>
+                        </div>
+                        <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
+                            <div style="width: 90%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
+                            <span>Block Programming [Scratch,KidBright,microBlock,microbit] </span>
+                            <span style="color: var(--primary);">95%</span>
+                        </div>
+                        <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
+                            <div style="width: 95%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
+                            <span>Python / AI in Education / EdgeAI</span>
+                            <span style="color: var(--primary);">80%</span>
+                        </div>
+                        <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
+                            <div style="width: 80%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
+                            <span>Microcontroller [Arduino,ESP32,STM32]</span>
+                            <span style="color: var(--primary);">90%</span>
+                        </div>
+                        <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
+                            <div style="width: 80%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
+                            <span>Multimedia & Graphic Design</span>
+                            <span style="color: var(--primary);">85%</span>
+                        </div>
+                        <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
+                            <div style="width: 85%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Contact Card -->
+                <div class="card" style="padding: 30px;">
+                    <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 20px; color: var(--primary-light); display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
+                        <span style="background: rgba(16, 185, 129, 0.2); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1rem;">📞</span> ข้อมูลการติดต่อ
+                    </h3>
+                    
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <div style="width: 40px; height: 40px; background: rgba(15, 23, 42, 0.6); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary-light); border: 1px solid var(--glass-border);">
+                            📧
+                        </div>
+                        <div>
+                            <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 3px;">อีเมล</p>
+                            <p style="font-size: 0.95rem; color: var(--text-main);">panittha.edu@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 40px; height: 40px; background: rgba(15, 23, 42, 0.6); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary-light); border: 1px solid var(--glass-border);">
+                            🌐
+                        </div>
+                        <div>
+                            <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 3px;">เว็บไซต์ / แฟ้มสะสมงาน</p>
+                            <p style="font-size: 0.95rem; color: var(--text-main);">site.krucode.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: grid; gap: 30px;">
+                
+                <div class="card">
+                    <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 25px; color: var(--primary-light); display: flex; align-items: center; gap: 10px;">
+                        <span style="background: rgba(16, 185, 129, 0.2); width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">👤</span> ประวัติส่วนตัว
+                    </h3>
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <td style="width: 35%; color: var(--text-dim); font-weight: 600;">ชื่อ - นามสกุล</td>
+                                <td style="color: var(--text-main); font-weight: 500;">นางสาวปณิฏฐา บุญยงค์</td>
+                            </tr>
+
+                            <tr>
+                                <td style="color: var(--text-dim); font-weight: 600;">ตำแหน่ง</td>
+                                <td style="color: var(--text-main);">ครู</td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--text-dim); font-weight: 600;">วิทยฐานะ</td>
+                                <td style="color: var(--text-main);">-</td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--text-dim); font-weight: 600;">สถานศึกษา</td>
+                                <td style="color: var(--text-main);">โรงเรียนวังน้ำเย็นวิทยาคม อำเภอวังน้ำเย็น จังหวัดสระแก้ว</td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--text-dim); font-weight: 600;">สังกัด</td>
+                                <td style="color: var(--text-main);">สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาสระแก้ว</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 25px; color: var(--primary-light); display: flex; align-items: center; gap: 10px;">
+                        <span style="background: rgba(16, 185, 129, 0.2); width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">🎓</span> ประวัติการศึกษา
+                    </h3>
+                    <div style="background: rgba(15, 23, 42, 0.4); padding: 20px; border-radius: 12px; border: 1px solid var(--glass-border); margin-bottom: 15px;">
+                        <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">ปริญญาตรี: วิทยาศาสตรบัณฑิต (วท.บ.)</h4>
+                        <p style="color: var(--primary-light); font-size: 0.95rem; margin-bottom: 5px;">สาขาวิชา วิทยาการคอมพิวเตอร์</p>
+                        <p style="color: var(--text-dim); font-size: 0.9rem;">มหาวิทยาลัยราชภัฏอุบลราชธานี | พ.ศ. 2565</p>
+                    </div>
+                    <div style="background: rgba(15, 23, 42, 0.4); padding: 20px; border-radius: 12px; border: 1px solid var(--glass-border);">
+                        <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">หลักสูตรประกาศนียบัตรบัณฑิตวิชาชีพครู</h4>
+                        <p style="color: var(--primary-light); font-size: 0.95rem; margin-bottom: 5px;">วิชาชีพครู</p>
+                        <p style="color: var(--text-dim); font-size: 0.9rem;">มหาวิทยาลัยราชภัฏอุบลราชธานี | พ.ศ. 2566</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 25px; color: var(--primary-light); display: flex; align-items: center; gap: 10px;">
+                        <span style="background: rgba(16, 185, 129, 0.2); width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">⏳</span> ประวัติการรับราชการ
+                    </h3>
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th style="width: 25%;">วัน/เดือน/ปี</th>
+                                <th>ตำแหน่ง / สังกัด / หน่วยงาน</th>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--text-dim);">1 ธันวาคม 2566</td>
+                                <td style="color: var(--text-main); font-weight: 500;">
+                                    ครูผู้ช่วย<br>
+                                    <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 400;">โรงเรียนวังน้ำเย็นวิทยาคม สพม.สระแก้ว</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--text-dim);">1 ธันวาคม 2568</td>
+                                <td style="color: var(--text-main); font-weight: 500;">
+                                    ครู (คศ.1)<br>
+                                    <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 400;">โรงเรียนวังน้ำเย็นวิทยาคม สพม.สระแก้ว</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-line"></div>
+            <p class="copyright">© 2026 PANIITTHA BOONYONG | PA PERFORMANCE AGREEMENT</p>
+            <p class="sub-footer">WANGNAMYENWITTAYAKOM SCHOOL • SECONDARY EDUCATIONAL SERVICE AREA OFFICE SA KAEO</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
