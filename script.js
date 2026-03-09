@@ -91,5 +91,26 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape' && lightbox.classList.contains('active')) {
             closeLightbox();
         }
+        
+        // Security: Prevent specific keyboard shortcuts (F12, Inspect, View Source, Save, Print)
+        if (e.key === 'F12' || 
+           (e.ctrlKey && e.shiftKey && ['I', 'i', 'C', 'c', 'J', 'j'].includes(e.key)) || 
+           (e.ctrlKey && ['U', 'u', 'S', 's', 'P', 'p'].includes(e.key))) {
+            e.preventDefault();
+        }
     });
+
+    // Security: Prevent Right Click
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Security: Prevent Copying
+    document.addEventListener('copy', e => e.preventDefault());
+
+    // Security: Prevent Text Selection and Image Dragging
+    document.addEventListener('selectstart', e => {
+        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+            e.preventDefault();
+        }
+    });
+    document.addEventListener('dragstart', e => e.preventDefault());
 });
