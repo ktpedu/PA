@@ -795,7 +795,11 @@ footer {
     gap: 30px;
     padding: 40px 20px;
   }
+  .table-container {
+    overflow-x: auto;
+  }
 }
+
 @media (max-width: 768px) {
   .nav-wrapper {
     flex-direction: column;
@@ -804,6 +808,11 @@ footer {
   .nav-menu {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 5px;
+  }
+  .nav-menu a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
   }
   .card-footer {
     flex-direction: column;
@@ -816,11 +825,62 @@ footer {
   .hero {
     padding: 40px 0 80px;
   }
+  .banner-container {
+    height: 250px;
+    margin-bottom: -100px;
+  }
   .profile-img-container {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
   }
   .profile-text h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+  .profile-header-card {
+    padding: 30px 20px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .card {
+    padding: 25px 20px;
+  }
+  .showcase-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .btn-evidence {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    height: 200px;
+    margin-bottom: -80px;
+  }
+  .profile-img-container {
+    width: 120px;
+    height: 120px;
+  }
+  .profile-text h1 {
+    font-size: 1.6rem;
+  }
+  .nav-menu a {
+    padding: 5px 8px;
+    font-size: 0.85rem;
+  }
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .content-box {
+    padding: 15px;
+  }
+  .summary-value {
+    font-size: 2.8rem;
   }
 }
