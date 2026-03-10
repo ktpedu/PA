@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -6,26 +7,6 @@
     <title>PA | PANITTHA - ข้อมูลทั่วไป</title>
     <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/1/15/Wny-logo.png">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* เพิ่มเติมสไตล์เพื่อควบคุมระยะห่างของ Grid โดยเฉพาะ */
-        .profile-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr; /* ปรับสัดส่วนซ้าย-ขวา */
-            gap: 40px; /* เพิ่มระยะห่างระหว่างคอลัมน์ */
-            align-items: start;
-        }
-
-        @media (max-width: 992px) {
-            .profile-grid {
-                grid-template-columns: 1fr; /* แท็บเล็ตและมือถือให้เรียงต่อกัน */
-                gap: 30px;
-            }
-        }
-        
-        .card {
-            margin-bottom: 0; /* ให้ Grid gap ควบคุมระยะห่างแทน */
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -58,7 +39,7 @@
                     <a href="#" >ผลลัพธ์การเรียนรู้ ▾</a>
                     <div class="dropdown-content">
                         <a href="innovation.html" >สื่อและนวัตกรรม</a>
-                        <a href="students.html" >ผลงาน student</a>
+                        <a href="students.html" >ผลงานนักเรียน</a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -94,6 +75,7 @@
                     </div>
                 </div>
 
+                <!-- New Skills Card -->
                 <div class="card" style="padding: 30px;">
                     <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 20px; color: var(--primary-light); display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
                         <span style="background: rgba(16, 185, 129, 0.2); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1rem;">💻</span> ทักษะความเชี่ยวชาญ
@@ -101,7 +83,7 @@
                     
                     <div style="margin-bottom: 15px;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
-                            <span>Web Development [HTML, CSS, JS, PHP]</span>
+                            <span>Web Development [HTML, CSS, JavaScript, PHP]</span>
                             <span style="color: var(--primary);">90%</span>
                         </div>
                         <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
@@ -111,7 +93,7 @@
                     
                     <div style="margin-bottom: 15px;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
-                            <span>Block Programming</span>
+                            <span>Block Programming [Scratch,KidBright,microBlock,microbit] </span>
                             <span style="color: var(--primary);">95%</span>
                         </div>
                         <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
@@ -121,27 +103,25 @@
 
                     <div style="margin-bottom: 15px;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
-                            <span>Python / AI in Education</span>
+                            <span>Python / AI in Education / EdgeAI</span>
                             <span style="color: var(--primary);">80%</span>
                         </div>
                         <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
                             <div style="width: 80%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
                         </div>
                     </div>
-                    
                     <div style="margin-bottom: 15px;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
-                            <span>Microcontroller</span>
+                            <span>Microcontroller [Arduino,ESP32,STM32]</span>
                             <span style="color: var(--primary);">90%</span>
                         </div>
                         <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
-                            <div style="width: 90%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
+                            <div style="width: 80%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
                         </div>
                     </div>
-
                     <div>
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
-                            <span>Multimedia & Graphic</span>
+                            <span>Multimedia & Graphic Design</span>
                             <span style="color: var(--primary);">85%</span>
                         </div>
                         <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
@@ -150,12 +130,13 @@
                     </div>
                 </div>
 
+                <!-- New Contact Card -->
                 <div class="card" style="padding: 30px;">
                     <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 20px; color: var(--primary-light); display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
                         <span style="background: rgba(16, 185, 129, 0.2); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1rem;">📞</span> ข้อมูลการติดต่อ
                     </h3>
                     
-                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
                         <div style="width: 40px; height: 40px; background: rgba(15, 23, 42, 0.6); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary-light); border: 1px solid var(--glass-border);">
                             📧
                         </div>
@@ -189,6 +170,7 @@
                                 <td style="width: 35%; color: var(--text-dim); font-weight: 600;">ชื่อ - นามสกุล</td>
                                 <td style="color: var(--text-main); font-weight: 500;">นางสาวปณิฏฐา บุญยงค์</td>
                             </tr>
+
                             <tr>
                                 <td style="color: var(--text-dim); font-weight: 600;">ตำแหน่ง</td>
                                 <td style="color: var(--text-main);">ครู</td>
@@ -260,11 +242,17 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-line"></div>
-            <p class="copyright">© 2026 PANITTHA BOONYONG | PA PERFORMANCE AGREEMENT</p>
+            <p class="copyright">© 2026 PANIITTHA BOONYONG | PA PERFORMANCE AGREEMENT</p>
             <p class="sub-footer">WANGNAMYENWITTAYAKOM SCHOOL • SECONDARY EDUCATIONAL SERVICE AREA OFFICE SA KAEO</p>
         </div>
-    </footer>  
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
+
+
+
+
+
