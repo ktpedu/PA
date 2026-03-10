@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -7,6 +6,28 @@
     <title>PA | PANITTHA - ข้อมูลทั่วไป</title>
     <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/1/15/Wny-logo.png">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* เพิ่ม CSS เฉพาะหน้า Profile เพื่อคุมระยะห่างให้แม่นยำ */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr; /* แบ่งคอลัมน์ซ้าย-ขวา */
+            gap: 30px; /* ระยะห่างระหว่างคอลัมน์ */
+            align-items: start;
+        }
+
+        /* สำหรับหน้าจอมือถือ ให้เรียงต่อกันเป็นแถวเดียว */
+        @media (max-width: 992px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* คุมระยะห่างระหว่าง Card แนวตั้งในแต่ละคอลัมน์ */
+        .column-wrapper {
+            display: grid;
+            gap: 30px; /* เว้นระยะห่างระหว่างกล่องบน-ล่างให้เท่ากับ 30px */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -61,7 +82,7 @@
         
         <div class="profile-grid">
             
-            <div style="display: grid; gap: 30px;">
+            <div class="column-wrapper">
                 <div class="card" style="text-align: center; padding: 40px 30px;">
                     <div class="profile-img-container" style="margin: 0 auto 25px auto; width: 220px; height: 220px;">
                         <img src="assets/image/profile1.jpg" alt="นางสาวปณิฏฐา บุญยงค์">
@@ -75,7 +96,6 @@
                     </div>
                 </div>
 
-                <!-- New Skills Card -->
                 <div class="card" style="padding: 30px;">
                     <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 20px; color: var(--primary-light); display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
                         <span style="background: rgba(16, 185, 129, 0.2); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1rem;">💻</span> ทักษะความเชี่ยวชาญ
@@ -93,7 +113,7 @@
                     
                     <div style="margin-bottom: 15px;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
-                            <span>Block Programming [Scratch,KidBright,microBlock,microbit] </span>
+                            <span>Block Programming</span>
                             <span style="color: var(--primary);">95%</span>
                         </div>
                         <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
@@ -103,43 +123,22 @@
 
                     <div style="margin-bottom: 15px;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
-                            <span>Python / AI in Education / EdgeAI</span>
+                            <span>Python / AI in Education</span>
                             <span style="color: var(--primary);">80%</span>
                         </div>
                         <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
                             <div style="width: 80%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
                         </div>
                     </div>
-                    <div style="margin-bottom: 15px;">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
-                            <span>Microcontroller [Arduino,ESP32,STM32]</span>
-                            <span style="color: var(--primary);">90%</span>
-                        </div>
-                        <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
-                            <div style="width: 80%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-main);">
-                            <span>Multimedia & Graphic Design</span>
-                            <span style="color: var(--primary);">85%</span>
-                        </div>
-                        <div style="width: 100%; height: 6px; background: rgba(15, 23, 42, 0.8); border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border);">
-                            <div style="width: 85%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 10px;"></div>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- New Contact Card -->
                 <div class="card" style="padding: 30px;">
                     <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 20px; color: var(--primary-light); display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
                         <span style="background: rgba(16, 185, 129, 0.2); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1rem;">📞</span> ข้อมูลการติดต่อ
                     </h3>
                     
                     <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
-                        <div style="width: 40px; height: 40px; background: rgba(15, 23, 42, 0.6); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary-light); border: 1px solid var(--glass-border);">
-                            📧
-                        </div>
+                        <div style="width: 40px; height: 40px; background: rgba(15, 23, 42, 0.6); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary-light); border: 1px solid var(--glass-border);">📧</div>
                         <div>
                             <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 3px;">อีเมล</p>
                             <p style="font-size: 0.95rem; color: var(--text-main);">panittha.edu@gmail.com</p>
@@ -147,9 +146,7 @@
                     </div>
 
                     <div style="display: flex; align-items: center; gap: 15px;">
-                        <div style="width: 40px; height: 40px; background: rgba(15, 23, 42, 0.6); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary-light); border: 1px solid var(--glass-border);">
-                            🌐
-                        </div>
+                        <div style="width: 40px; height: 40px; background: rgba(15, 23, 42, 0.6); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary-light); border: 1px solid var(--glass-border);">🌐</div>
                         <div>
                             <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 3px;">เว็บไซต์ / แฟ้มสะสมงาน</p>
                             <p style="font-size: 0.95rem; color: var(--text-main);">ktpedu.github.io/PA</p>
@@ -158,8 +155,7 @@
                 </div>
             </div>
 
-            <div style="display: grid; gap: 30px;">
-    
+            <div class="column-wrapper">
                 <div class="card">
                     <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; margin-bottom: 25px; color: var(--primary-light); display: flex; align-items: center; gap: 10px;">
                         <span style="background: rgba(16, 185, 129, 0.2); width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">👤</span> ประวัติส่วนตัว
@@ -170,22 +166,17 @@
                                 <td style="width: 35%; color: var(--text-dim); font-weight: 600;">ชื่อ - นามสกุล</td>
                                 <td style="color: var(--text-main); font-weight: 500;">นางสาวปณิฏฐา บุญยงค์</td>
                             </tr>
-
                             <tr>
                                 <td style="color: var(--text-dim); font-weight: 600;">ตำแหน่ง</td>
                                 <td style="color: var(--text-main);">ครู</td>
                             </tr>
                             <tr>
-                                <td style="color: var(--text-dim); font-weight: 600;">วิทยฐานะ</td>
-                                <td style="color: var(--text-main);">-</td>
-                            </tr>
-                            <tr>
                                 <td style="color: var(--text-dim); font-weight: 600;">สถานศึกษา</td>
-                                <td style="color: var(--text-main);">โรงเรียนวังน้ำเย็นวิทยาคม อำเภอวังน้ำเย็น จังหวัดสระแก้ว</td>
+                                <td style="color: var(--text-main);">โรงเรียนวังน้ำเย็นวิทยาคม</td>
                             </tr>
                             <tr>
                                 <td style="color: var(--text-dim); font-weight: 600;">สังกัด</td>
-                                <td style="color: var(--text-main);">สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาสระแก้ว</td>
+                                <td style="color: var(--text-main);">สพม. สระแก้ว</td>
                             </tr>
                         </table>
                     </div>
@@ -197,13 +188,11 @@
                     </h3>
                     <div style="background: rgba(15, 23, 42, 0.4); padding: 20px; border-radius: 12px; border: 1px solid var(--glass-border); margin-bottom: 15px;">
                         <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">ปริญญาตรี: วิทยาศาสตรบัณฑิต (วท.บ.)</h4>
-                        <p style="color: var(--primary-light); font-size: 0.95rem; margin-bottom: 5px;">สาขาวิชา วิทยาการคอมพิวเตอร์</p>
-                        <p style="color: var(--text-dim); font-size: 0.9rem;">มหาวิทยาลัยราชภัฏอุบลราชธานี </p>
+                        <p style="color: var(--primary-light); font-size: 0.95rem;">สาขาวิชา วิทยาการคอมพิวเตอร์</p>
                     </div>
                     <div style="background: rgba(15, 23, 42, 0.4); padding: 20px; border-radius: 12px; border: 1px solid var(--glass-border);">
-                        <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">หลักสูตรประกาศนียบัตรบัณฑิตวิชาชีพครู</h4>
-                        <p style="color: var(--primary-light); font-size: 0.95rem; margin-bottom: 5px;">วิชาชีพครู</p>
-                        <p style="color: var(--text-dim); font-size: 0.9rem;">มหาวิทยาลัยราชภัฏอุบลราชธานี </p>
+                        <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">ประกาศนียบัตรบัณฑิตวิชาชีพครู</h4>
+                        <p style="color: var(--primary-light); font-size: 0.95rem;">มหาวิทยาลัยราชภัฏอุบลราชธานี</p>
                     </div>
                 </div>
 
@@ -214,45 +203,33 @@
                     <div class="table-container">
                         <table>
                             <tr>
-                                <th style="width: 25%;">วัน/เดือน/ปี</th>
-                                <th>ตำแหน่ง / สังกัด / หน่วยงาน</th>
+                                <th style="width: 30%;">วัน/เดือน/ปี</th>
+                                <th>ตำแหน่ง / สังกัด</th>
                             </tr>
                             <tr>
-                                <td style="color: var(--text-dim);">1 ธันวาคม 2566</td>
-                                <td style="color: var(--text-main); font-weight: 500;">
-                                    ครูผู้ช่วย<br>
-                                    <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 400;">โรงเรียนวังน้ำเย็นวิทยาคม สพม.สระแก้ว</span>
-                                </td>
+                                <td>1 ธ.ค. 2566</td>
+                                <td>ครูผู้ช่วย โรงเรียนวังน้ำเย็นวิทยาคม</td>
                             </tr>
                             <tr>
-                                <td style="color: var(--text-dim);">1 ธันวาคม 2568</td>
-                                <td style="color: var(--text-main); font-weight: 500;">
-                                    ครู (คศ.1)<br>
-                                    <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 400;">โรงเรียนวังน้ำเย็นวิทยาคม สพม.สระแก้ว</span>
-                                </td>
+                                <td>1 ธ.ค. 2568</td>
+                                <td>ครู (คศ.1) โรงเรียนวังน้ำเย็นวิทยาคม</td>
                             </tr>
                         </table>
                     </div>
                 </div>
-
             </div>
+            
         </div>
     </main>
 
     <footer>
         <div class="container footer-content">
             <div class="footer-line"></div>
-            <p class="copyright">© 2026 PANIITTHA BOONYONG | PA PERFORMANCE AGREEMENT</p>
+            <p class="copyright">© 2026 PANITTHA BOONYONG | PA PERFORMANCE AGREEMENT</p>
             <p class="sub-footer">WANGNAMYENWITTAYAKOM SCHOOL • SECONDARY EDUCATIONAL SERVICE AREA OFFICE SA KAEO</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
